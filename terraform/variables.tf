@@ -1,7 +1,7 @@
 variable "vpc_id" {
   description = "The ID of the VPC"
   type        = string
-  default     = "vpc-08a92cff686cbd67a"
+  default     = "vpc-0e149ba65327585a6"
 }
 
 variable "ex_role_arn" {
