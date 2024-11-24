@@ -4,7 +4,6 @@ resource "aws_lb" "ecs-alb" {
   load_balancer_type = "application"
   security_groups    = [var.sg_id]
   subnets            = toset(data.aws_subnets.existing_subnets.ids)
-  target_group_arn   = aws_lb_target_group.ecs-alb-tg.arn
 
   enable_deletion_protection = false
 
